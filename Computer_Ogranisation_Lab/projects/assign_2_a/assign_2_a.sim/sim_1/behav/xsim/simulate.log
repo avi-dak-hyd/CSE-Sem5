@@ -1,0 +1,4 @@
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+time =                    0        A = 10001101, B = 10001010,ci = 0 , sum = 00010111, c_out = 1
+$finish called at time : 5 ns : File "/home/avijit/study_material/Computer_Ogranisation_Lab/projects/assign_2_a/assign_2_a.srcs/sim_1/new/tstb_RCA.v" Line 13

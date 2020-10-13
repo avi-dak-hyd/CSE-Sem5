@@ -1,0 +1,36 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /home/avijit/Xilinix/Vivado/Vivado/2018.3/bin/unwrapped/lnx64.o/xelab -wto acbe976327fc4105b81dbf2ac7f4b7b7 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot mux_tb_behav xil_defaultlib.mux_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/home/avijit/study_material/Computer_Ogranisation_Lab/projects/mux/mux.srcs/sources_1/new/mux.v" Line 35. Module m16_1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/avijit/study_material/Computer_Ogranisation_Lab/projects/mux/mux.srcs/sources_1/new/mux.v" Line 8. Module m41 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/avijit/study_material/Computer_Ogranisation_Lab/projects/mux/mux.srcs/sources_1/new/mux.v" Line 1. Module m21 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/avijit/study_material/Computer_Ogranisation_Lab/projects/mux/mux.srcs/sources_1/new/mux.v" Line 1. Module m21 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/avijit/study_material/Computer_Ogranisation_Lab/projects/mux/mux.srcs/sources_1/new/mux.v" Line 1. Module m21 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/avijit/study_material/Computer_Ogranisation_Lab/projects/mux/mux.srcs/sources_1/new/mux.v" Line 8. Module m41 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/avijit/study_material/Computer_Ogranisation_Lab/projects/mux/mux.srcs/sources_1/new/mux.v" Line 1. Module m21 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/avijit/study_material/Computer_Ogranisation_Lab/projects/mux/mux.srcs/sources_1/new/mux.v" Line 1. Module m21 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/avijit/study_material/Computer_Ogranisation_Lab/projects/mux/mux.srcs/sources_1/new/mux.v" Line 1. Module m21 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/avijit/study_material/Computer_Ogranisation_Lab/projects/mux/mux.srcs/sources_1/new/mux.v" Line 8. Module m41 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/avijit/study_material/Computer_Ogranisation_Lab/projects/mux/mux.srcs/sources_1/new/mux.v" Line 1. Module m21 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/avijit/study_material/Computer_Ogranisation_Lab/projects/mux/mux.srcs/sources_1/new/mux.v" Line 1. Module m21 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/avijit/study_material/Computer_Ogranisation_Lab/projects/mux/mux.srcs/sources_1/new/mux.v" Line 1. Module m21 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/avijit/study_material/Computer_Ogranisation_Lab/projects/mux/mux.srcs/sources_1/new/mux.v" Line 8. Module m41 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/avijit/study_material/Computer_Ogranisation_Lab/projects/mux/mux.srcs/sources_1/new/mux.v" Line 1. Module m21 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/avijit/study_material/Computer_Ogranisation_Lab/projects/mux/mux.srcs/sources_1/new/mux.v" Line 1. Module m21 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/avijit/study_material/Computer_Ogranisation_Lab/projects/mux/mux.srcs/sources_1/new/mux.v" Line 1. Module m21 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/avijit/study_material/Computer_Ogranisation_Lab/projects/mux/mux.srcs/sources_1/new/mux.v" Line 8. Module m41 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/avijit/study_material/Computer_Ogranisation_Lab/projects/mux/mux.srcs/sources_1/new/mux.v" Line 1. Module m21 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/avijit/study_material/Computer_Ogranisation_Lab/projects/mux/mux.srcs/sources_1/new/mux.v" Line 1. Module m21 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/avijit/study_material/Computer_Ogranisation_Lab/projects/mux/mux.srcs/sources_1/new/mux.v" Line 1. Module m21 doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.m21
+Compiling module xil_defaultlib.m41
+Compiling module xil_defaultlib.m16_1
+Compiling module xil_defaultlib.mux_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot mux_tb_behav

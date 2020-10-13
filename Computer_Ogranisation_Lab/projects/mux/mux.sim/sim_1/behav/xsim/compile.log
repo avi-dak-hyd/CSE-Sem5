@@ -1,0 +1,9 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/avijit/study_material/Computer_Ogranisation_Lab/projects/mux/mux.srcs/sources_1/new/mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module m21
+INFO: [VRFC 10-311] analyzing module m41
+INFO: [VRFC 10-311] analyzing module m81
+INFO: [VRFC 10-311] analyzing module m16_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/avijit/study_material/Computer_Ogranisation_Lab/projects/mux/mux.srcs/sim_1/new/mux_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/avijit/study_material/Computer_Ogranisation_Lab/projects/mux/mux.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

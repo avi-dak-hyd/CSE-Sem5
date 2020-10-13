@@ -1,0 +1,753 @@
+$date
+	Tue Oct 13 18:00:45 2020
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb_alu $end
+$var wire 1 ! equality_check $end
+$var wire 1 " P $end
+$var wire 1 # G $end
+$var wire 4 $ F [3:0] $end
+$var wire 1 % Cn4 $end
+$var reg 4 & A [3:0] $end
+$var reg 4 ' ALU_Sel [3:0] $end
+$var reg 4 ( B [3:0] $end
+$var reg 1 ) M $end
+$var reg 1 * cin $end
+$var integer 32 + i [31:0] $end
+$scope module test_unit $end
+$var wire 4 , A [3:0] $end
+$var wire 4 - ALU_Sel [3:0] $end
+$var wire 4 . B [3:0] $end
+$var wire 1 % Cn4 $end
+$var wire 4 / F [3:0] $end
+$var wire 1 ) M $end
+$var wire 1 * cin $end
+$var wire 1 ! equality_check $end
+$var wire 1 0 cout $end
+$var wire 1 " P $end
+$var wire 1 # G $end
+$var wire 4 1 ALU_Result [3:0] $end
+$var reg 1 2 Cn $end
+$var reg 1 3 eq_check $end
+$var reg 4 4 op1 [3:0] $end
+$var reg 4 5 op2 [3:0] $end
+$scope module m1 $end
+$var wire 4 6 a [3:0] $end
+$var wire 4 7 b [3:0] $end
+$var wire 1 2 cin $end
+$var wire 1 8 temp $end
+$var wire 4 9 sum [3:0] $end
+$var wire 1 " pg $end
+$var wire 4 : p [3:0] $end
+$var wire 1 # gg $end
+$var wire 4 ; g [3:0] $end
+$var wire 5 < carry [4:0] $end
+$var wire 1 0 c4 $end
+$scope begin genblk1[0] $end
+$scope module fa $end
+$var wire 1 = a $end
+$var wire 1 > b $end
+$var wire 1 ? cin $end
+$var wire 1 8 cout $end
+$var wire 1 @ g $end
+$var wire 1 A p $end
+$var wire 1 B s $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[1] $end
+$scope module fa $end
+$var wire 1 C a $end
+$var wire 1 D b $end
+$var wire 1 E cin $end
+$var wire 1 8 cout $end
+$var wire 1 F g $end
+$var wire 1 G p $end
+$var wire 1 H s $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[2] $end
+$scope module fa $end
+$var wire 1 I a $end
+$var wire 1 J b $end
+$var wire 1 K cin $end
+$var wire 1 8 cout $end
+$var wire 1 L g $end
+$var wire 1 M p $end
+$var wire 1 N s $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[3] $end
+$scope module fa $end
+$var wire 1 O a $end
+$var wire 1 P b $end
+$var wire 1 Q cin $end
+$var wire 1 8 cout $end
+$var wire 1 R g $end
+$var wire 1 S p $end
+$var wire 1 T s $end
+$upscope $end
+$upscope $end
+$scope module unit $end
+$var wire 1 2 c0 $end
+$var wire 1 U g0 $end
+$var wire 1 V g1 $end
+$var wire 1 W g2 $end
+$var wire 1 X g3 $end
+$var wire 1 # gg $end
+$var wire 1 Y p0 $end
+$var wire 1 Z p1 $end
+$var wire 1 [ p2 $end
+$var wire 1 \ p3 $end
+$var wire 1 " pg $end
+$var wire 5 ] carry [4:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b11010 ]
+1\
+0[
+0Z
+0Y
+0X
+1W
+0V
+1U
+0T
+1S
+0R
+1Q
+0P
+1O
+0N
+0M
+1L
+0K
+1J
+1I
+1H
+0G
+0F
+1E
+0D
+0C
+0B
+0A
+1@
+0?
+1>
+1=
+b11010 <
+b101 ;
+b1000 :
+b10 9
+x8
+b101 7
+b1101 6
+b101 5
+b1101 4
+03
+02
+b10 1
+10
+b1101 /
+b101 .
+b1 -
+b1101 ,
+b0 +
+1*
+0)
+b101 (
+b1 '
+b1101 &
+0%
+b1101 $
+1#
+0"
+0!
+$end
+#10
+1%
+00
+0Q
+0#
+0H
+0E
+b0 <
+b0 ]
+b1111 $
+b1111 /
+0U
+0W
+b0 1
+b0 9
+0T
+08
+0\
+0@
+b0 ;
+0L
+b0 :
+0S
+0>
+0J
+0=
+0I
+0O
+b0 5
+b0 7
+b0 4
+b0 6
+1)
+b10 '
+b10 -
+b1 +
+#20
+1"
+b0 $
+b0 /
+1B
+1Y
+1H
+1Z
+1N
+1[
+b1111 1
+b1111 9
+1T
+1\
+1A
+1G
+1M
+b1111 :
+1S
+1=
+1C
+1I
+1O
+b1111 4
+b1111 6
+0)
+b11 '
+b11 -
+b10 +
+#30
+0"
+b101 $
+b101 /
+0B
+0Y
+b1010 1
+b1010 9
+0N
+0[
+0A
+b1010 :
+0M
+0=
+0I
+b1010 4
+b1010 6
+1)
+b100 '
+b100 -
+b11 +
+#40
+0%
+10
+b10000 <
+b10000 ]
+1#
+b1010 $
+b1010 /
+0T
+0\
+1X
+1B
+1Y
+0H
+0Z
+b101 1
+b101 9
+1N
+1[
+x8
+0S
+b1000 ;
+1R
+1A
+0G
+b101 :
+1M
+1P
+1=
+0C
+1I
+b1000 5
+b1000 7
+b1101 4
+b1101 6
+0)
+b101 '
+b101 -
+b100 +
+#50
+1%
+00
+b0 <
+b0 ]
+0#
+b111 $
+b111 /
+1T
+1\
+0X
+0B
+0Y
+b1000 1
+b1000 9
+0N
+0[
+08
+1S
+b0 ;
+0R
+0A
+b1000 :
+0M
+0P
+0=
+0I
+b0 5
+b0 7
+b1000 4
+b1000 6
+1)
+b110 '
+b110 -
+b101 +
+#60
+0%
+10
+1N
+0T
+1K
+1Q
+1#
+1E
+b1011 $
+b1011 /
+b11110 <
+b11110 ]
+b100 1
+b100 9
+0H
+1Z
+1U
+1W
+b1010 :
+1G
+1@
+x8
+b101 ;
+1L
+1>
+1D
+1J
+1P
+1=
+1I
+0O
+b1111 5
+b1111 7
+b101 4
+b101 6
+0)
+b111 '
+b111 -
+b110 +
+#70
+1%
+00
+08
+0K
+0Q
+0#
+1H
+0E
+b0 <
+b0 ]
+b1000 $
+b1000 /
+1B
+1Y
+0U
+1N
+1[
+0W
+b111 1
+b111 9
+0T
+0\
+1A
+0@
+1M
+b0 ;
+0L
+b111 :
+0S
+0>
+0D
+0J
+0P
+1C
+b0 5
+b0 7
+b111 4
+b111 6
+1)
+b1000 '
+b1000 -
+b111 +
+#80
+0%
+10
+1Q
+1#
+1E
+b11010 <
+b11010 ]
+b1101 $
+b1101 /
+0"
+0B
+0Y
+1U
+0N
+0[
+1W
+1H
+0Z
+b10 1
+b10 9
+0T
+1\
+0A
+1@
+x8
+0M
+b101 ;
+1L
+0G
+b1000 :
+1S
+1>
+1J
+0C
+1O
+b101 5
+b101 7
+b1101 4
+b1101 6
+0)
+b1001 '
+b1001 -
+b1000 +
+#90
+1%
+00
+0Q
+0#
+0H
+0E
+b0 <
+b0 ]
+b1010 $
+b1010 /
+1B
+1Y
+0U
+1N
+1[
+0W
+b101 1
+b101 9
+0T
+08
+0\
+1A
+0@
+1M
+b0 ;
+0L
+b101 :
+0S
+0=
+0I
+0O
+b0 4
+b0 6
+1)
+b1010 '
+b1010 -
+b1001 +
+#100
+0%
+10
+1K
+1Q
+1#
+1E
+b11110 <
+b11110 ]
+b1011 $
+b1011 /
+0H
+1Z
+0T
+1\
+0B
+0Y
+1U
+b100 1
+b100 9
+1N
+0[
+1W
+1G
+1S
+0A
+1@
+x8
+b1010 :
+0M
+b101 ;
+1L
+1D
+1P
+1=
+1I
+b1111 5
+b1111 7
+b101 4
+b101 6
+0)
+b1011 '
+b1011 -
+b1010 +
+#110
+1%
+00
+0N
+0K
+0Q
+0#
+0E
+b1110 $
+b1110 /
+b0 <
+b0 ]
+0H
+08
+0Z
+0T
+0\
+b1 1
+b1 9
+1B
+1Y
+0U
+0W
+0G
+0S
+b1 :
+1A
+0@
+b0 ;
+0L
+0D
+0J
+0P
+0=
+0I
+b1 5
+b1 7
+b0 4
+b0 6
+1)
+b1100 '
+b1100 -
+b1011 +
+#120
+0%
+1T
+10
+1Q
+1H
+1#
+1E
+b101 $
+b101 /
+b11010 <
+b11010 ]
+b1010 1
+b1010 9
+0B
+0Y
+1U
+1W
+1X
+b0 :
+0A
+1@
+1L
+x8
+b1101 ;
+1R
+1J
+1P
+1=
+1I
+1O
+b1101 5
+b1101 7
+b1101 4
+b1101 6
+0)
+b1101 '
+b1101 -
+b1100 +
+#130
+1%
+0T
+00
+0Q
+0H
+0#
+0E
+b0 <
+b0 ]
+b1010 $
+b1010 /
+1B
+1Y
+0U
+b101 1
+b101 9
+1N
+1[
+0W
+0X
+08
+1A
+0@
+b101 :
+1M
+0L
+b0 ;
+0R
+0>
+0J
+0P
+0O
+b0 5
+b0 7
+b101 4
+b101 6
+1)
+b1110 '
+b1110 -
+b1101 +
+#140
+0%
+1T
+10
+1Q
+1K
+1#
+1E
+b11110 <
+b11110 ]
+b11 $
+b11 /
+0B
+0Y
+1U
+1N
+0[
+1W
+b1100 1
+b1100 9
+0H
+1Z
+1X
+0A
+1@
+0M
+1L
+b10 :
+1G
+x8
+b1101 ;
+1R
+1>
+1J
+1P
+1C
+1O
+b1101 5
+b1101 7
+b1111 4
+b1111 6
+0)
+b1111 '
+b1111 -
+b1110 +
+#150
+1%
+0N
+0T
+00
+b1101 $
+b1101 /
+0K
+0Q
+b10 1
+b10 9
+1H
+08
+0#
+0E
+b0 <
+b0 ]
+0U
+0W
+0X
+0@
+0L
+b0 ;
+0R
+0>
+0J
+0P
+0=
+0I
+0O
+b0 5
+b0 7
+b10 4
+b10 6
+1)
+b0 '
+b0 -
+b1111 +
+#160
+b10000 +

@@ -1,0 +1,16 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /home/avijit/Xilinix/Vivado/Vivado/2018.3/bin/unwrapped/lnx64.o/xelab -wto c658029f58b54fc09e48a8c385a9cf3e --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tst_behav xil_defaultlib.tst xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "/home/avijit/study_material/Computer_Ogranisation_Lab/projects/assign_2_b/assign_2_b.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.full_Adder
+Compiling module xil_defaultlib.CLA_4B_default
+Compiling module xil_defaultlib.CASCADE
+Compiling module xil_defaultlib.tst
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tst_behav

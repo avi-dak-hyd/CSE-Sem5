@@ -1,0 +1,7 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/avijit/study_material/Computer_Ogranisation_Lab/projects/assign_2_b/assign_2_b.srcs/sources_1/new/adders.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_Adder
+INFO: [VRFC 10-311] analyzing module RCA
+INFO: [VRFC 10-311] analyzing module CLA_4B
+INFO: [VRFC 10-311] analyzing module CASCADE
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/avijit/study_material/Computer_Ogranisation_Lab/projects/assign_2_b/assign_2_b.srcs/sim_1/new/tstb_RCA.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tst
