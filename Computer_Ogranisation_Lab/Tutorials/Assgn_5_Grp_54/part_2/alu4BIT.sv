@@ -106,7 +106,7 @@ module alu(
           4'b0001: 
             begin
               if(M) begin
-                op1 = ~(A|B);
+                op1 = ~(A)|(~B);
                 op2 = 0;
                 Cn = 0;
               end
@@ -182,7 +182,7 @@ module alu(
               end
               else begin
                 op1 = A;
-                op2 = B+1;
+                op2 = ~B;
                 Cn = ~cin;
 
               end
@@ -286,7 +286,7 @@ module alu(
                 Cn = 0;
               end
               else begin
-                op1 = A&B;
+                op1 = A|(~B);
                 op2 = A;
                 Cn = ~cin;
               end
@@ -299,8 +299,8 @@ module alu(
                 Cn = 0;
               end
               else begin
-                op1 = A|(~B);
-                op2 = A;
+                op1 = A;
+                op2 = 4'b1111;
                 Cn = ~cin;
               end
              end

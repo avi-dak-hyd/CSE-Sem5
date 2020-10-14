@@ -11,7 +11,7 @@ module tb_alu;
  // Verilog code for ALU
  integer i;
  alu_16BIT test_unit(
-            A,B,  // ALU 8-bit Inputs                 
+            A,B,  // ALU 16-bit Inputs                 
             ALU_Sel,// ALU Selection
    			M,cin,
    			Cn4,equality_check,P,G,F
@@ -19,11 +19,11 @@ module tb_alu;
     initial begin
     // hold reset state for 100 ns.
       
-      $dumpfile("test.vcd");
-      $dumpvars;
+      //$dumpfile("test.vcd");
+      //$dumpvars;
 
-      A = 16'b1101;
-      B = 16'b0101;
+      A = 16'b1010001010111101;
+      B = 16'b0101010001010001;
       cin = 1;
       M = 1;
       ALU_Sel = 4'h0;
