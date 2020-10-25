@@ -1,4 +1,8 @@
 // MODULE FOR FULL ADDER
+
+// Sumit Kumar Yadav (18CS30042)
+// Avijit Mandal (18CS30010)
+
 module add(input a, input b,input cin, output cout, output s,output p,output g);
     assign s=a^b^cin;
     assign cout=(a&b)+(cin&(a^b));
@@ -64,7 +68,7 @@ module alu(
 	);
   wire [3:0]ALU_Result;
   reg eq_check;
-  assign F = ~(ALU_Result[3:0]);
+  assign F = ~(ALU_Result[3:0]); // assigning negation of ALU_Result (=op1+op2+Cn) as per physical structure given in IC
   wire cout;
   assign Cn4 = ~cout;
   assign equality_check = eq_check;
@@ -92,14 +96,14 @@ module alu(
         4'b0000: 
             begin
               if(M) begin
-                op1 = ~A;
-                op2 = 0;
-                Cn = 0;
+                op1 = ~A; // assigning the logical value to the op1
+                op2 = 0;  // assigning op2 = 0 and Carry = 0
+                Cn = 0;   // this give res = op1+op2+carry <-- the logical value
               end
               else begin
-                op1 = A;
+                op1 = A;  // assigning op1 and op2 in such a way that op1+op2 <-- res of Datasheet
                 op2 = 0;
-                Cn = ~cin;
+                Cn = ~cin;// assigning negation of carryIn to carry to be send carryLookAheadAdder
 
               end
             end
