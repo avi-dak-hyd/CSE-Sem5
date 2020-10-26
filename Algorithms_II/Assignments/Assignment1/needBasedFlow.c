@@ -56,7 +56,7 @@ int max(int a, int b){
 	return (a>b)?a:b;
 }
 
-VERTEX * createVertex(int n, int id)
+VERTEX * createVertex(int id, int n)
 {
 	VERTEX *node = (VERTEX *)malloc(sizeof(VERTEX));
 	node->p = (EDGE *)malloc(sizeof(EDGE));
@@ -229,9 +229,9 @@ GRAPH* ReadGraph(char *fname){
 
 
 	for(int i=1;i<=V;i++){
-		int n,x = i;
+		int n;
 		fscanf(fptr,"%d",&n);
-		VERTEX *newVertex = createVertex(n,x);
+		VERTEX *newVertex = createVertex(i,n);
 		G->H[i] = newVertex;
 	}
 
@@ -278,7 +278,7 @@ void PrintGraph(GRAPH *G){
 }
 
 
-void computeMaxFlow(GRAPH *G, int s, int t){
+int computeMaxFlow(GRAPH *G, int s, int t){
 
 	addExtraEdge(G);
 	printf("\n");
@@ -309,6 +309,59 @@ void computeMaxFlow(GRAPH *G, int s, int t){
 
 	printf("maxFlow obtained = %d\n", flow);	
 
+	return flow;
+
+}
+int NeedBasedFlow(GRAPH *G){
+
+	printf("\n::::Need Based Flow Calculated::::\n");
+
+	int noV = G->V, noE = G->E;
+
+	int posN = 0, negN = 0;
+
+	for(int i=1;i<=noV;i++){
+		if((G->H[i])->n > 0)
+			posN += (G->H[i])->n;
+		else negN += (G->H[i])->n;
+	}
+
+	if(posN+negN !=0){
+		// not Possible
+		printf("-1\n");
+		return -1;
+	}
+
+	// adding Source as V+1 th and sink as V+2
+
+	VERTEX * s = createVertex(++noV,0);
+	G->H[noV] = s;
+
+	VERTEX * t = createVertex(++noV,0);
+	G->H[noV] = t;
+
+	for(int i = 1; i<=noV; i++){
+		int cp = (G->H[i])->n;
+
+		if(cp > 0){
+			addEdge(G,i,t->x,cp);
+			noE++;
+		}
+		else{
+			addEdge(G,s->x,i,-cp);
+			noE++;
+		}
+
+	}
+
+
+	if(computeMaxFlow(G, s->x, t->x) != posN){
+		printf("-1\n");
+		return -1;
+	}
+
+	return posN;
+
 }
 
 
@@ -328,6 +381,12 @@ int main(){
 	int source, sink;
 	fscanf(fptr,"%d %d", &source, &sink);
 	computeMaxFlow(G, source, sink);
+	PrintGraph(G);
+
+	G = ReadGraph("input.txt");
+
+	int flag = NeedBasedFlow(G);
+
 	PrintGraph(G);
 
 
