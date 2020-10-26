@@ -312,7 +312,7 @@ int computeMaxFlow(GRAPH *G, int s, int t){
 	return flow;
 
 }
-int NeedBasedFlow(GRAPH *G){
+void NeedBasedFlow(GRAPH *G){
 
 	printf("\n::::Need Based Flow Calculated::::\n");
 
@@ -328,8 +328,8 @@ int NeedBasedFlow(GRAPH *G){
 
 	if(posN+negN !=0){
 		// not Possible
-		printf("-1\n");
-		return -1;
+		printf("-1 _NOT__POSSIBLE_\n");
+		return;
 	}
 
 	// adding Source as V+1 th and sink as V+2
@@ -356,11 +356,11 @@ int NeedBasedFlow(GRAPH *G){
 
 
 	if(computeMaxFlow(G, s->x, t->x) != posN){
-		printf("-1\n");
-		return -1;
+		printf("-1 _NOT__POSSIBLE_\n");
+		return;
+
 	}
 
-	return posN;
 
 }
 
@@ -388,7 +388,7 @@ int main(){
 
 	G = ReadGraph(input_txt);
 
-	int flag = NeedBasedFlow(G);
+	NeedBasedFlow(G);
 
 	PrintGraph(G);
 
