@@ -369,12 +369,15 @@ int NeedBasedFlow(GRAPH *G){
 
 int main(){
 
+	char input_txt[21];
+	printf("Provide Name of Your File With Extension , e.g input.txt\n");
+	scanf("%s", input_txt);
 
-	fp = fopen ("file.txt", "w");
+
 	memset(isRealEdge, 0, sizeof(isRealEdge));
 	memset(isEdgeExist, 0, sizeof(isEdgeExist));
 
-	GRAPH *G = ReadGraph("input.txt");
+	GRAPH *G = ReadGraph(input_txt);
 
 
 	PrintGraph(G);
@@ -383,7 +386,7 @@ int main(){
 	computeMaxFlow(G, source, sink);
 	PrintGraph(G);
 
-	G = ReadGraph("input.txt");
+	G = ReadGraph(input_txt);
 
 	int flag = NeedBasedFlow(G);
 
