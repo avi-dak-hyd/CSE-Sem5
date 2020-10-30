@@ -42,6 +42,7 @@ typedef struct augPath
 int isRealEdge[MAX][MAX];
 int isEdgeExist[MAX][MAX];
 int ind = 1;
+int flow = 0;
 
 augPath bestPath;
 
@@ -122,7 +123,7 @@ augPath compPath(augPath bestPath, augPath currPath){
 		return currPath;
 	}
 	else if(bestPath.len == currPath.len){
-		if(bestPath.cf < currPath.cf)
+		if(bestPath.cf > currPath.cf)
 			return bestPath;
 		else return currPath;
 	}
@@ -254,7 +255,7 @@ GRAPH* ReadGraph(char *fname){
 
 void PrintGraph(GRAPH *G){
 
-	printf("::::Printing graph::::\n");
+	printf("\n::::Printing graph::::\n");
 
 	for(int i = 1;i<= G->V; i++)
 	{
@@ -278,12 +279,12 @@ void PrintGraph(GRAPH *G){
 }
 
 
-int computeMaxFlow(GRAPH *G, int s, int t){
+void computeMaxFlow(GRAPH *G, int s, int t){
 
 	addExtraEdge(G);
 	printf("\n");
 
-	int flow = 0;
+	flow = 0;
 
 	while(1){
 
@@ -309,14 +310,14 @@ int computeMaxFlow(GRAPH *G, int s, int t){
 
 	printf("maxFlow obtained = %d\n", flow);	
 
-	return flow;
+	return ;
 
 }
 void NeedBasedFlow(GRAPH *G){
 
-	printf("\n::::Need Based Flow Calculated::::\n");
+	printf("\n::::Need Based Flow Called::::\n");
 
-	int noV = G->V, noE = G->E;
+	int noV = G->V;
 
 	int posN = 0, negN = 0;
 
@@ -328,7 +329,7 @@ void NeedBasedFlow(GRAPH *G){
 
 	if(posN+negN !=0){
 		// not Possible
-		printf("-1 _NOT__POSSIBLE_\n");
+		printf("\n-1, _NOT__POSSIBLE_\n");
 		return;
 	}
 
@@ -345,18 +346,19 @@ void NeedBasedFlow(GRAPH *G){
 
 		if(cp > 0){
 			addEdge(G,i,t->x,cp);
-			noE++;
+
 		}
 		else{
 			addEdge(G,s->x,i,-cp);
-			noE++;
+
 		}
 
 	}
+	
+	computeMaxFlow(G, s->x, t->x);
 
-
-	if(computeMaxFlow(G, s->x, t->x) != posN){
-		printf("-1 _NOT__POSSIBLE_\n");
+	if(flow != posN){
+		printf("\n-1, _NOT__POSSIBLE_\n");
 		return;
 
 	}
@@ -383,6 +385,7 @@ int main(){
 	PrintGraph(G);
 	int source, sink;
 	fscanf(fptr,"%d %d", &source, &sink);
+	printf("\nsource = %d, sink = %d\n", source, sink);
 	computeMaxFlow(G, source, sink);
 	PrintGraph(G);
 
@@ -391,6 +394,8 @@ int main(){
 	NeedBasedFlow(G);
 
 	PrintGraph(G);
+
+
 
 
 
