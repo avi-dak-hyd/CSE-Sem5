@@ -1,0 +1,32 @@
+.data
+	message: .asciiz "This is a message\n"
+	message1: .asciiz "This is ---- a message\n"
+.text 
+	main:
+		addi $t0, $zero, 1
+		addi $t1, $zero, 200
+	
+		slt $a0, $t0, $t1
+	
+		beq $a0, $zero, printMessage
+		jal printMessageNot
+		
+	# Exiting the programme
+	li $v0, 10
+	syscall
+	
+	printMessage:
+		li $v0, 4
+		la $a0, message
+		syscall
+		
+	printMessageNot:
+		li $v0, 4
+		la $a0, message1
+		syscall
+		
+		jr $ra
+		
+	
+	
+	
